@@ -1,6 +1,8 @@
 package com.example.iossenac.appcrudcontatodao.model;
 
-public class Contato {
+import java.io.Serializable;
+
+public class Contato implements Serializable {
     private int id;
     private String nome;
     private String telefone;
@@ -26,5 +28,13 @@ public class Contato {
 
     public String getTelefone() {
         return telefone;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }
